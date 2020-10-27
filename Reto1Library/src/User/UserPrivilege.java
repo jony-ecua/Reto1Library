@@ -3,16 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package comicSans.com.Reto1Library;
+package User;
 
 /**
  *
  * @author Xabier Carnero
- * La clase para determinar el estado del usuario
+ * La clase para determinar el privilegio del usuario
  */
 
-public enum UserStatus {
-    ENABLED, DISABLED;
+public enum UserPrivilege {
+    USER, ADMIN;
 }
-    
-

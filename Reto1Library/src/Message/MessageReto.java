@@ -3,14 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package comicSans.com.Reto1Library;
+package Message;
+
+import User.User;
+import java.io.Serializable;
 
 /**
  * Clase para definir los enum
  * @author Jonathan Viñan
  */
+public class MessageReto implements Serializable{
+    
+    private User user;
+    
+    public void setUser (User aux){
+        this.user = aux;
+    }
 
-public enum Message{
+    public User getUser() {
+        return user;
+    }
+    
+    
+    
+    enum type{
        
         SIGN_IN, //Para el proceso de inicio seccion
         SIGN_UP, //Para el proceso de registrado en la bda
@@ -20,4 +36,5 @@ public enum Message{
         ERROR_PASSWORD     //Para el proceos de comprobar la contraseña no es correcta   
         
     }   
+}
 
