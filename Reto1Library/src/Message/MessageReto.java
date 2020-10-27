@@ -15,6 +15,7 @@ import java.io.Serializable;
 public class MessageReto implements Serializable{
     
     private User user;
+    private Type type;
     
     public void setUser (User aux){
         this.user = aux;
@@ -23,18 +24,10 @@ public class MessageReto implements Serializable{
     public User getUser() {
         return user;
     }
+
+    public Type getType() {
+        return type;
+    }
     
-    
-    
-    enum type{
-       
-        SIGN_IN, //Para el proceso de inicio seccion
-        SIGN_UP, //Para el proceso de registrado en la bda
-        LOGOUT,  //Para el proceso de salida del usuario del programa
-        ERROR_USESR_EXIST, //Para el proceso comprobar el usuario ya existe
-        ERROR_USER_NOT_EXIST,//Para el proceso de comprobar que el usuario no existe
-        ERROR_PASSWORD     //Para el proceos de comprobar la contraseña no es correcta   
-        
-    }   
 }
 
