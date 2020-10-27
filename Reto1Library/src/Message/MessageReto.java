@@ -17,8 +17,12 @@ public class MessageReto implements Serializable{
     private User user;
     private Type type;
     
-    public void setUser (User aux){
-        this.user = aux;
+    public void setUser (User user){
+        this.user = user;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 
     public User getUser() {
