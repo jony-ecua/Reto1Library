@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package comicSans.com.Reto1Library;
+package comicSans.com.Reto1Library.User;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -12,7 +13,9 @@ import java.util.Date;
  * @author Xabier Carnero
  * Clase User, en ella se guarda los datos de los usuarios
  */
-public class User {
+public class User implements Serializable{
+    
+    private static final long serialVersionUID = 1646384092668845627L;
     
     private int id;
     private String login;
